@@ -8,7 +8,7 @@
         image: ami-xxxxxxxxxxxx
         count: 1
         region: us-east-x
-        aws_secret_key: xxxxxxxxxxxxxxxxxxxxxxxxx
-        aws_access_key: xxxxxxxxxxxxxxxxxx
         vpc_subnet_id: subnet-xxxxxxxxxxxxx
         assign_public_ip: yes
+        aws_secret_key: xxxxxxxxxxxxxxxxxxxxxxxxx
+        aws_access_key: xxxxxxxxxxxxxxxxxx
