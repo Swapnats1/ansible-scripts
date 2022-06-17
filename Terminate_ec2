@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Terminate Ec2 instances
+      ec2:
+        instance_ids: xxxxxxx
+        state: 'absent'
+        region: us-east-2
+        wait: True
