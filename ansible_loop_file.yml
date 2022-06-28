@@ -9,3 +9,21 @@
         - file3.txt
         - file4.txt
         - file5.txt
+        
+        
+        
+loops with content
+        
+        
+---
+- hosts: localhost
+  tasks:
+    - name: create ten files
+      shell: echo "creating new files" > "{{ item }}"
+      with_items:
+        - file1.txt
+        - file2.txt
+        - file3.txt
+        - file4.txt
+        - file5.txt
+
