@@ -1,0 +1,23 @@
+---
+- hosts: localhost
+  tasks:
+    - name: install git
+      shell: sudo yum install git -y
+
+    - name: install jenkins
+      shell: sudo yum -y install jenkins
+
+    - name: start jenkins
+      shell: sudo systemctl start jenkins
+
+    - name: enable jenkins
+      shell: sudo systemctl enable jenkins
+
+    - name: install apache
+      shell: sudo yum install httpd -y
+
+    - name: install maven
+      shell: sudo yum install - apache-maven
+
+    - name: install java
+      shell: sudo yum install java-1.8.0-openjdk -y
