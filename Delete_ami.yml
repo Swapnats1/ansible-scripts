@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Delete AMI
+      ec2_ami:
+        image_id: ami-xxxxxxxxxxx
+        state: absent
+        delete_snapshot: True
+		region: us-xxxx-x
