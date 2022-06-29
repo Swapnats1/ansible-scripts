@@ -3,7 +3,7 @@
   tasks:
     - name: Delete AMI
       ec2_ami:
-        image_id: ami-xxxxxxxxxxx
+        image_id: ami-xxxxxxxxxxxx
         state: absent
         delete_snapshot: True
-	region: us-xxxx-x
+        region: us-xxxx-x
