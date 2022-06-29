@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Basic AMI creation
+      ec2_ami:
+         instance_id: i-xxxxxxxxx
+         wait: yes
+         name: newtest
+         region: us-xxxx-x
+         
